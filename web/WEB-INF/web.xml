@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <servlet-name>PasswordGeneratorServlet</servlet-name>
+        <servlet-class>biz.waller.ad.PasswordGeneratorServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PasswordGeneratorServlet</servlet-name>
+        <url-pattern>/passGenerator.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PhoneWelcomeServlet</servlet-name>
+        <servlet-class>biz.waller.ad.PhoneWelcomeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PhoneWelcomeServlet</servlet-name>
+        <url-pattern>/callxml.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserInputServlet</servlet-name>
+        <servlet-class>biz.waller.ad.UserInputServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserInputServlet</servlet-name>
+        <url-pattern>/inputDetails.do</url-pattern>
+    </servlet-mapping>
+    
+</web-app>
